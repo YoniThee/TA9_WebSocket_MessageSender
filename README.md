@@ -13,7 +13,7 @@ Before running ServiceA, ensure the following requirements are met:
 ### Installation
 1. Clone the repository or download the code for ServiceA:
 ```
-git clone https://github.com/yourusername/serviceA.git
+git clone https://github.com/YoniThee/TA9_WebSocket_MessageSender.git
 cd serviceA
 ```
 2. Restore the NuGet packages:
