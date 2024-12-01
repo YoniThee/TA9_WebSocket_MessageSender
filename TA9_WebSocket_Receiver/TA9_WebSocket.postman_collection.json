@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "6a90a103-ef36-48c1-a491-d2ef0be48268",
+		"name": "TA9_WebSocket",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40037950"
+	},
+	"item": [
+		{
+			"name": "0. Send Message to serviceB",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"this is message to save at the DB\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44366/api/Message",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44366",
+					"path": [
+						"api",
+						"Message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1. Get All Messages From  serviceB",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/api/messages",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
