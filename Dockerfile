@@ -28,5 +28,6 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 # Set the listening port of the application to 44366
-ENV ASPNETCORE_URLS=http://+:44366
+ENV ASPNETCORE_URLS=http://+:44366;https://+:44367
+
 ENTRYPOINT ["dotnet", "TA9_WebSocket_MessageSender.dll"]
