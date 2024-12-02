@@ -60,5 +60,6 @@ You can test the POST endpoint using Postman or cURL by sending a JSON payload:
 ```
 "string to send to serverB"
 ```
-
+Before running the requests - 
+run rhe serverB (the receiver) from this link https://github.com/YoniThee/TA9_WebSocket_Receiver.git
 Postman collection for example is attached
